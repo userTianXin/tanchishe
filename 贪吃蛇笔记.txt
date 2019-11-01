@@ -1,0 +1,31 @@
+startBtn 开始按钮
+pause暂停
+snake蛇
+wrap包装
+贪吃蛇的蛇和圆形都是由JS创建只需要在结构中设置一个父级就可以
+z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。
+
+可利用橡皮擦及魔棒工具做背景透明
+ outline:none;点击时不需要线none
+cursor: pointer;点击小手
+background-size: cover;图片和父级的容器一边大
+
+样式设置完之后 删掉
+#snakeWrap div{
+    width: 20px;
+    height: 20px;
+}
+以及结构
+            <div class="snakeHead"></div>
+            <div class="snakeBody"></div>
+            <div class="food"></div>
+等待js设置时在添加回来
+采用面向对象的方式写js
+
+Square正方形的
+init用来初始化的，面向对象时经常用init来初始化参数
+self自己 collied碰撞
+this.pos.forEach用来遍历数组
+strategies战略
+设计模式有一种模式叫单粒模式，就是要移除在创建食物，而单粒模式是只有一个食物不需要删除在添加，只需要改变left和top值就可以
+
